@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500&family=Roboto&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    background: linear-gradient(to right,#062f16,#000000 90%);
+    margin: 0;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+#topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  color: #ffffff;
+  font-family: 'Share Tech Mono';
+  font-size: 40px;
+  letter-spacing: 2px;
+  z-index: 99;
+}
+.topbar-btn {
+  display: flex;
+  align-items: center;
+}
+.topbar-a {
+  transition: 0.3s;
+  color: #ffffff;
+  border: none;
+  padding: 0 25px 0 8px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  /* border-left: 2px solid white; */
+}
+
+.topbar-btn > a:hover {
+  color: #ffa7a7;
+}
+.logo {
+  margin: 0;
+  cursor: pointer;
+}
+.logo > a {
+  text-decoration: none;
+  color: white;
+}
+.logo > a > span {
+  color: #1DB954;
+}
+
+
+.image{
+  width: 100%;
+}
+
+.container-head{
+    height: 550px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#1DB954 20%,#011a0a);
+    padding-left: 30px;
+    overflow: hidden;
+    border-bottom-left-radius: 10%;
+}
+.head-content{
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+h2{
+    font-family:'albert sans';
+    font-size: 10vw;
+    color: #000000;
+    margin: 0;
+    margin-left: -6px;
+}
+p {
+  font-family:'albert sans';
+  font-size: 20px;
+}
+
+.scroll_button {
+    font-size: larger;
+    height:40px;
+    width:fit-content;
+    font-family:'albert sans';
+    word-spacing: 12px;
+    border: none;
+    cursor: pointer;
+    color: #1DB954;
+    border-radius:12% ;
+    transition: 0.3s;
+    background-color:#000000;
+    transform: scale(1.50);
+}
+
+.scroll_button:hover{
+    transition: 0.5s;
+    transform: scale(1.45);
+    background-color: white;
+    color: #000000;
+    
+}
+
+.scroll_button:hover .image {
+    transform: rotate(180deg);
+    cursor: pointer;
+    
+}
+.content:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    padding-top: 80px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3vh;
+    height: 100%;
+    
+    
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(7, 7, 7);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border: 1px solid #1DB954;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(7, 7, 7);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border: 1px solid #1DB954;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    
+    
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: #000000;
+    border: 4px solid #1DB954; 
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -13px;
+  }
+  
+  /* The actual content */
+  .content {  
+    height: 40vh;
+    width: 35vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 6px;
+    position: relative;
+    transition: 0.7s;
+    border: 0.5px solid #1DB954;
+    color: #ffffff;
+    background: linear-gradient(to right,#000000,#141414 90%);
+    
+  }
+  .h2-content{
+    border-radius: 50%;
+    background: linear-gradient(to right,#1DB954,#13602f 90%);
+    height: 7vw;
+    width: 7vw;
+    font-size: 9vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    z-index: 1;
+    margin-bottom:20vh;
+  }
+  
+    
+  .content h1{
+    font-family:'albert sans';
+    
+    margin: 20px;
+    font-size: 2vw; 
+    color: #000000;
+  
+  }
+  .first-timeline{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    margin-top: -16vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .second-timeline{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9vw;
+    margin-top: -15.5vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .third-timeline{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -14vh;
+    font-size: 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .fourth-timeline{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -14.5vh;
+    font-size: 0.9vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .fifth-timeline{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -14vh;
+    font-size: 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .sixth-timeline{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -15vh;
+    font-size: 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .content img{
+    border-radius: 50%;height: 10vw;width: 10vw;border: 4px solid #1DB954 ;margin-top: -1vh;
+  }
+
+  
+  @media screen and (max-width: 1130px) {
+
+    .timeline::after {
+      left: 31px;
+    }
+    .first-timeline,.second-timeline,.third-timeline,.fourth-timeline,.fifth-timeline,.sixth-timeline{
+      font-size: 2.3vw;
+    }
+    .content{
+      width: fit-content;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+  @media screen and (max-width: 490px) {
+  .h2-content{
+    width: 14vw;
+    height: 14vw;
+    font-size: 120px;
+  }
+  .head-content h2{
+    margin-top: 90px;
+    font-size: 7vw;
+  }
+  .content img{
+    visibility: hidden;
+  }
+  .head-content p{
+    font-size: 3vw;
+
+  }
+  .scroll_button{
+    font-size: smaller;
+    height:20px;
+    width:fit-content;
+  }
+  .container-head{
+    height: 40vh;
+    width: 100%;
+    margin: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    background-color: rgb(155, 165, 165);
+    padding-bottom: 120px;
+    box-shadow:10px 10px 20px #444343;
+  }
+.image{
+  display: none;
+}
+.first-timeline,.second-timeline,.third-timeline,.fourth-timeline,.fifth-timeline,.sixth-timeline{
+  font-size: 2.9vw;
+  margin-left: 12px;
+}
+
+}
+
+  

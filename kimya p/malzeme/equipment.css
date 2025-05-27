@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500&family=Roboto&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech+Mono&display=swap');
+
+body {
+    margin: 0;
+    background-color: #313131;
+} 
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* __________---topbar---_________________________ */
+#topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    font-family: 'Share Tech Mono';
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.topbar-btn {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-a {
+    transition: 0.5s;
+    color: rgb(171, 171, 171);
+    border: none;
+    padding: 0 25px 0 8px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.topbar-a-2 {
+    color: white;
+    cursor: default;
+}
+
+.topbar-btn>a:hover {
+    color: #fbff03;
+}
+
+.logo {
+    margin: 0;
+    cursor: pointer;
+}
+
+.logo>a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo>a>span {
+    color: #fbff03;
+}
+
+/* _____topbar end_______________________________ */
+
+.equipment-main {
+    display: flex;
+    color: white;
+}
+
+.TABLE-OF-CONTENTS {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 40px;
+    background-color: #313131;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 310px;
+    height: 470px;
+    margin-left: 10px;
+    border-radius: 30px;
+    padding-top: 10px;
+}
+
+.TABLE-OF-CONTENTS>h3,
+.TABLE-OF-CONTENTS>h5 {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.TABLE-OF-CONTENTS>h5 {
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+
+.TABLE-OF-CONTENTS>ul>li>a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'roboto';
+    color: #d5e7ff;
+}
+
+.all-contents {
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#Timepass {
+    height: 80px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 1px solid gray;
+}
+
+.content-right {
+    flex-direction: row-reverse;
+}
+
+.content>ul {
+    font-family: 'Albert Sans';
+    width: 700px;
+}
+
+.img>img {
+    width: 250px;
+    border-radius: 20px;
+}@media only screen and (max-width: 768px) {
+    .TABLE-OF-CONTENTS {
+        display: none;
+        /* position: static;
+        top: 0;
+        transform: none;
+        margin-left: 0; 
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        background-color: #f84242;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px; */
+    }
+    .all-contents {
+        margin-left: 0;
+    }
+}
